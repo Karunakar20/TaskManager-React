@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Root wrapper */
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; /* Remove padding that caused left white space */
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+}
+
+/* Main layout container */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;        /* Full viewport height */
+  width: 100%;
+}
+
+/* Navbar on top full width */
+.navbar-component {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 60px;         /* Fixed height for navbar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 10;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Sidebar + dashboard container below navbar */
+.sidebar-component,
+.dashboard-component {
+  display: flex;
+}
+
+/* Sidebar fixed on left */
+.sidebar-component {
+  position: fixed;
+  top: 60px;            /* Start below navbar */
+  left: 0;
+  width: 250px;         /* Fixed width */
+  height: calc(100vh - 60px);
+  background: #e06d6d;  /* Your sidebar color */
+  border-right: 1px solid #ddd;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+/* Dashboard (right side) fills remaining space */
+.main-content {
+  flex: 1;
+  margin-left: 160px;   
+  padding: 20px;
+  /* height: calc(100vh - 60px); */
+  overflow-y: auto;
+  background-color: #fff;
+  margin-top: 40px;
+}
+
+/* Scrollbar style (optional) */
+.main-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+}
+
+.main-content::-webkit-scrollbar-track {
+  background: transparent;
+}

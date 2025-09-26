@@ -1,0 +1,17 @@
+.settings{
+     color: black;
+     /* background-color: black; */
+     display: flex;
+     
+}
+
+.main-content {
+    padding: 10px;
+    padding-left: 30px;
+    
+}
+
+.parent-content h3{
+     font-size: x-large;
+
+}

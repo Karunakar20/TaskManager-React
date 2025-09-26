@@ -1,0 +1,101 @@
+.main {
+  display: flex; 
+  flex-direction: row;
+  color: black;
+  background-color: #F8F8F8;
+  /* width: 100%; */
+  align-items: center;
+  justify-content: space-between;  /* Spread title, search, icons evenly */
+  padding: 10px;
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+.title .first-half {
+  color: #FF6767; /* First half color */
+}
+
+.title .second-half {
+  color: black; /* Second half color */
+}
+
+.global-search {
+  display: flex;
+  align-items: center;
+}
+
+.global-search input[type="search"] {
+  width: 695px;
+  height: 36px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  background-color: #F5F8FF;
+  font-size: 14px;
+  color: black;
+  padding-left: 15px;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.global-search svg {
+  height: 36px;
+  width: 36px;
+  color: #FFFFFF;
+  background-color: #FF6767;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-sizing: border-box;
+   padding: 8px;
+  
+}
+
+.info-icons {
+     
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.info-icons svg {
+  /* font-size: 15.29px; */
+  height: 36px;          /* Button height 15.29*/
+  width: 36px;           /* Button width */
+  padding: 8px;          /* Shrinks actual icon inside */
+  color: #FFFFFF;
+  background-color: #FF6767;
+  border-radius: 6px;
+  cursor: pointer;
+  box-sizing: border-box; /* Ensures padding doesn't increase total size */
+}
+
+
+.other-info{
+     display: flex;
+     flex-direction: column;
+     padding: 10px;
+}
+
+.other-info #day{
+     color: #000000;
+     
+}
+
+
+.other-info #date{
+     color: #3ABEFF;
+     
+}
+
